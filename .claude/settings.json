@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\\\Users\\\\EDY\\\\Desktop\\\\米兰素材\\\\动漫文档\\\\批量输出为图片\")",
+      "Bash(cp \"C:\\\\Users\\\\EDY\\\\xwechat_files\\\\wxid_4964819648112_b68c\\\\msg\\\\file\\\\2026-08\\\\《缘缘喜儿》渠道破圈内容拆解与10个争议性短视频脚本.md\" \"input/剧本/缘缘喜儿-10个短视频脚本-v1.0.md\")",
+      "Bash(ls -la \"C:\\\\Users\\\\EDY\\\\Desktop\\\\米兰素材\\\\动漫文档\\\\批量输出为图片\\\\\")",
+      "Read(//c/Users/EDY/Desktop/米兰素材/动漫文档/**)",
+      "Bash(ls -la 'C:\\\\Users\\\\EDY\\\\Desktop\\\\米兰素材\\\\动漫文档\\\\批量输出为图片\\\\')",
+      "Read(//c/Users/EDY/Desktop/米兰素材/动漫文档/批量输出为图片/**)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\EDY\\xwechat_files\\wxid_4964819648112_b68c\\msg\\file\\2026-08"
+    ]
+  }
+}

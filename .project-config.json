@@ -1,0 +1,23 @@
+{
+  "involvement_mode": "key_node",
+  "content_type": "narrative",
+  "project_type": "short_video_scripts",
+  "skip_music_episodes": [],
+  "storyboard_overrides": {
+    "global": "single-shot"
+  },
+  "storyboard_style": "cinematic_realism",
+  "video_model_config": {
+    "primary_model": "Seedance 2.0",
+    "max_seconds": 15,
+    "min_seconds": 4,
+    "supports_image_ref": true,
+    "supports_video_ref": true,
+    "supports_audio_ref": false,
+    "supports_full_context": false
+  },
+  "image_model_config": {
+    "primary_model": "即梦",
+    "grid_mode": "single"
+  }
+}
