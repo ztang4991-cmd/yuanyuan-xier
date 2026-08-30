@@ -8,8 +8,8 @@
   },
   "storyboard_style": "cinematic_realism",
   "video_model_config": {
-    "primary_model": "Seedance 2.0",
-    "max_seconds": 15,
+    "primary_model": "Seedance 2.5",
+    "max_seconds": 30,
     "min_seconds": 4,
     "supports_image_ref": true,
     "supports_video_ref": true,

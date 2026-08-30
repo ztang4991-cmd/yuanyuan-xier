@@ -258,3 +258,179 @@
 **创作完成时间**：2026-08-27  
 **音乐总监**：music-director agent  
 **状态**：原创音乐方案已完成，等待用户确认主题曲歌词版本
+
+---
+
+# ===== 脚本02 =====
+
+## 【脚本02主题曲·音乐方案】
+
+### 曲名：《一百种答案》
+
+**创作背景**：
+脚本02《社恐不是免死金牌》聚焦"社恐能否成为长期逃避沟通的理由"这一议题。喜儿（主动沟通方）的疲惫 vs 缘缘（社恐方）的恐惧，最终以"不完全和解"收尾——喜儿接受缘缘的选项卡片，但设立底线"我可以等慢的，但不能等永远不说话的"。
+
+**为什么这样设计**：
+- **情绪走向**：从质问→绝望→理解设限，音乐需要承载"温柔但有底线"的双重情绪
+- **结合创作基准**：承接"温柔克制的新国风治愈系"，用柔和包裹尖锐议题
+- **结合剧情**：信封堆、选项卡片、"替你想一百种答案"都是可视觉化的意象，但不能直接堆进歌词——要提炼成精神内核（一方的舒适区 = 另一方的煎熬区）
+
+**曲风/乐器/节奏**：
+- 曲风：新国风流行叙事，偏民谣质感，不过度煽情
+- 乐器：钢琴主导 + 竹笛点缀 + 弦乐铺底（大提琴营造压抑感）
+- 节奏：70 BPM左右，慢板叙事，给情绪留白
+- 人声：女声为主（可以是喜儿视角），中音区，亲密贴耳的演唱方式，副歌略微提升但不belt
+
+**情绪走向**：
+- Verse 1：质问、疲惫（喜儿视角）
+- Pre-Chorus：压抑递进（双方困境）
+- Chorus：核心控诉+底线设立（情绪高点但克制）
+- Verse 2：理解但坚持边界（转折）
+- Bridge：不完全和解（开放感）
+- Outro：温柔留白（希望但不承诺完美结局）
+
+---
+
+## M05 - 脚本02主题曲《一百种答案》
+
+- **对应剧情**：脚本02全段（0-30秒），尤其服务片尾定格画面+字幕浮现时刻
+- **服务人物**：喜儿（主视角）+ 缘缘（第二视角）
+- **情绪作用**：传递"我可以等慢的但不能等永远不说话的"这一核心边界，温柔但有力量
+- **类型**：OST主题曲（人声）
+- **时长估计**：完整版2-3分钟，可截取30秒副歌段用于短视频片尾
+- **情绪**：温柔、克制、疲惫、理解但有底线、不完全和解的开放感
+- **风格描述**：新国风民谣叙事，亲密感强，像对话而非宣言，不煽情但有记忆点
+- **参考作品/乐手**：
+  - 唐恬词作风格（叙事凝练、不堆词）
+  - 陈粒/房东的猫的民谣质感（亲密、口语化）
+  - 毛不易《消愁》的叙事节奏感
+
+**用户已选择：版本A（唐恬风 - 金句凝练型）**
+
+---
+
+### Suno 提示词变体 1：标准版（钢琴主导+竹笛点缀+弦乐铺底）
+
+**适用场景**：片尾定格画面+字幕浮现时刻，完整情绪表达  
+**预期效果**：温柔克制但有力量，金句"我可以等慢的但不能等永远不说话的"记忆点强
+
+━━━ 🎵 复制这里到 Suno ━━━
+
+**Style**: Neo-Chinese folk ballad, female vocal intimate and conversational, 70 BPM slow tempo, piano-driven foundation with soft felt-piano texture, bamboo flute accents in bridge and outro, cello undertone for melancholy, sparse guzheng plucks, mid-range vocal centered, breathy verses with gentle power in chorus, natural reverb like small tea house, no heavy drums, warm and restrained
+
+**Vocal Persona**: A young woman in her mid-20s who's learned to set boundaries with love, speaks her truth without aggression, her voice has both tenderness and quiet strength
+
+**Exclude Styles**: EDM, rock, heavy orchestral, autotune pop, overly dramatic, aggressive
+
+**Lyrics**:
+
+[Verse 1]
+十封信都没拆开
+茶凉了你还在等什么
+我问你要不要一起看云
+你说不知道怎么回
+
+[Pre-Chorus]
+你只需要沉默
+我却要替你想一百种答案
+是不是讨厌我
+还是只是不敢说
+
+[Chorus]
+我可以等一个慢慢说话的人
+但不能等一个永远不说话的人
+你的恐惧我理解
+但我的等待也有尽头
+
+社恐是需要被理解
+还是也需要学习负责
+三个选项你勾了第一个
+我们慢慢来
+
+[Verse 2]
+门铃响的那一刻
+你追出来手在发抖
+卡片上写着愿意、暂时不愿意
+你说如果不够请告诉我
+
+[Bridge]
+不是谁对谁错
+是两个人都在学
+你学着说出口
+我学着不猜测
+
+[Chorus - 变体]
+我可以等一个慢慢说话的人
+但不能等一个永远不说话的人
+你的卡片我收下了
+但答案要你亲口说
+
+社恐是需要被理解
+也需要学习去靠近
+我们都在半路上
+慢慢走
+
+[Outro]
+茶馆的灯还亮着
+信封还在桌上
+你慢慢说
+我慢慢听
+
+━━━ 复制到此为止 ━━━
+
+---
+
+### Suno 提示词变体 2：简约版（纯钢琴+人声，最克制）
+
+**适用场景**：需要更私密对话感的场景，或作为demo版本测试旋律  
+**预期效果**：极简极克制，像深夜茶馆里两个人的真实对话，钢琴不抢戏
+
+━━━ 🎵 复制这里到 Suno ━━━
+
+**Style**: Minimalist acoustic ballad, solo female vocal with piano only, 65 BPM intimate tempo, felt-piano with sustain pedal, close-mic'd vocal with natural breath sounds, conversational delivery like speaking to someone across a table, sparse arrangement with silence between phrases, warm but not sentimental, natural room reverb
+
+**Vocal Persona**: Someone who's tired but not giving up, setting a boundary gently but firmly, like a friend saying "I love you but I can't do this forever"
+
+**Exclude Styles**: any percussion, strings, orchestral, electronic, upbeat, overly produced
+
+**Lyrics**:
+[同上完整歌词]
+
+━━━ 复制到此为止 ━━━
+
+---
+
+### Suno 提示词变体 3：新国风加强版（古筝+竹笛+琵琶，更浓郁）
+
+**适用场景**：强调"新国风治愈系"视觉风格，配合茶馆/浮云城世界观  
+**预期效果**：古风韵味更浓，但不失现代感，适合B站/艺术向平台
+
+━━━ 🎵 复制这里到 Suno ━━━
+
+**Style**: Neo-Chinese contemporary ballad, female vocal warm and storytelling, 70 BPM, guzheng arpeggios as foundation, bamboo flute lead melody interweaving with vocal, pipa plucks for rhythmic accents, soft yangqin for texture, modern piano chords supporting, cello undertone, rich traditional instrumentation but modern production, not overly ancient-sounding, balanced between tradition and contemporary
+
+**Vocal Persona**: A young woman rooted in tradition but living in modern times, her voice carries both classical grace and contemporary directness
+
+**Exclude Styles**: EDM, rock, Western orchestral only, autotune pop, overly theatrical
+
+**Lyrics**:
+[同上完整歌词]
+
+━━━ 复制到此为止 ━━━
+
+---
+
+## 【三个变体的选择建议】
+
+| 变体 | 适合场景 | 优势 | 注意事项 |
+|------|---------|------|---------|
+| **变体1：标准版** | 通用，适合大部分平台 | 平衡各种元素，既有新国风特色又现代易听 | 需要Suno生成质量稳定 |
+| **变体2：简约版** | 私密对话场景、demo试听 | 极简极克制，最突出歌词和旋律 | 可能显得单薄，需要人声足够有张力 |
+| **变体3：新国风加强版** | B站/艺术向受众 | 视觉风格匹配度最高，新国风调性最浓 | 乐器过多可能抢歌词，需要混音平衡 |
+
+**建议操作**：
+1. 先用**变体1**生成，确认旋律和整体感觉
+2. 如果觉得太满，试**变体2**
+3. 如果觉得新国风不够明显，试**变体3**
+
+---
