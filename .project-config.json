@@ -2,7 +2,7 @@
   "involvement_mode": "key_node",
   "content_type": "narrative",
   "project_type": "short_video_scripts",
-  "skip_music_episodes": [],
+  "skip_music_episodes": ["脚本10"],
   "storyboard_overrides": {
     "global": "single-shot"
   },
