@@ -216,7 +216,17 @@ v11.0 新增（bug修复与功能补全）：
 [审核工作流]
     所有审核节点（阶段二、三、四、五）均执行以下流程（阶段一编剧创作由用户直接确认，不经此审核）：
 
-    agent 生成 → 写入对应文件 → **reviewer agent** 两步审核（v12.0：审核职责从 director 独立）
+    agent 生成 → 写入对应文件 → **第零步：Astra 规则层预审** → **reviewer agent** 两步审核（v12.0：审核职责从 director 独立）
+
+    第零步：Astra 规则层预审（v12.1 新增，2026-09-07；跨模型家族交叉验证）
+        - 制片人先运行：`node tools/astra-review.mjs --stage <director|art|music|storyboard> --episode <集数>`
+        - 由 GPT-6 Astra（第三方中转，密钥在 .env.local，已 gitignore）只审**可判定的规则型问题**：技术约束（.project-config.json 的 single-shot / min_seconds / max_seconds / 画幅）、与上游文件的事实性矛盾（人名/角色数/时间码/道具状态）、合规红线
+        - 脚本对每条问题的 quote 做原文回查，查不到的条目自动作废，并在报告中列出
+        - 产出：`outputs/<集数>/astra-review-<stage>.md`（人读）+ `.json`（机读）
+        - 复算后 FAIL（有 blocker/major 或评分不达阈值）→ 先把报告交给上游 agent 修改，**修到 Astra 复算 PASS 后**再进 reviewer
+        - Astra **不签**审美、气质、方言地道度、流量判断——这些仍归 reviewer；reviewer 审核时**应读取** Astra 报告避免重复劳动，并可推翻其结论（写明理由）
+        - 为什么加这一步：项目里脚本06 时长违规、番外01 违反 single-shot、脚本08 引入剧本外角色，全是规则型错误；创作与规则审核分属两个模型家族，同类盲点不再两端同时出现。定位依据见 `GPT-6-Astra接入定位建议报告.md`
+        - 中转不可用（HTTP 502 "Upstream access forbidden"）时，脚本会重试 4 次后报错；此时跳过第零步直接进 reviewer，并在审核结论里标注「Astra 预审未执行」
 
     第一步：业务审核
         - 加载阶段专属的审核 skill
