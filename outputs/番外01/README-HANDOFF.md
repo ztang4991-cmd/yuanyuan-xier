@@ -7,7 +7,7 @@
 ## 一、已经完成并落盘
 
 1. 原始 Word 稿已归档：`input/剧本/番外-9.3.docx`
-2. 第一个脚本已规范化：`script/番外01-谁来管管喜儿这脑回路.md`
+2. 第一个脚本已规范化：`script/番外/番外01-谁来管管喜儿这脑回路.md`
 3. 初版导演分析已生成：`outputs/番外01/01-director-analysis.md`
 4. 原创音乐方案已追加到 `assets/music/music-design.md`：M07《点心也有道理》
 5. 市面音乐备选已追加到 `assets/music/music-recommendations.md`：R10

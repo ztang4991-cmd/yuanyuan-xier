@@ -1,6 +1,6 @@
 # 脚本07《快递员必须永远情绪稳定吗？》全片总览
 
-> **剧本来源**：script/脚本07-快递员必须永远情绪稳定吗-30s版.md
+> **剧本来源**：script/10个争议脚本-30s/脚本07-快递员必须永远情绪稳定吗-30s版.md
 > **导演分析**：outputs/脚本07/01-director-analysis.md
 > **视频提示词**：outputs/脚本07/video-prompts.md
 > **人物提示词**：assets/visual/character-prompts.md ## 脚本07

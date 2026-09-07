@@ -1,6 +1,6 @@
 # 脚本08《公开告白是浪漫还是逼答应？》全片总览
 
-> **剧本来源**：script/脚本08-公开告白是浪漫还是逼答应-30s版.md  
+> **剧本来源**：script/10个争议脚本-30s/脚本08-公开告白是浪漫还是逼答应-30s版.md  
 > **导演分析**：outputs/脚本08/01-director-analysis.md  
 > **视频提示词**：outputs/脚本08/video-prompts.md  
 > **场景提示词**：assets/visual/scene-prompts.md ## 脚本08  
