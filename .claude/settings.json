@@ -14,10 +14,29 @@
       "Bash(git remote *)",
       "Bash(git branch *)",
       "Bash(git push *)",
-      "Bash(gh --version)"
+      "Bash(gh --version)",
+      "Bash(git check-ignore *)",
+      "Bash(node tools/astra-review.mjs --stage art --episode \"再催我一声\")",
+      "Bash(grep -E \"\\\\.\\(env|js|mjs|json\\)$\")",
+      "Bash(node tools/astra-review.mjs --stage art --episode 再催我一声)",
+      "Bash(ls -la \"C:\\\\Users\\\\EDY\\\\xwechat_files\\\\wxid_4964819648112_b68c\\\\msg\\\\file\\\\2026-09\\\\11-V14\\\\.claude\\\\skills\" 2>/dev/null | head -20)",
+      "Read(//c/Users/EDY/xwechat_files/wxid_4964819648112_b68c/msg/file/2026-09/11-V14/.claude/**)",
+      "Bash(mkdir -p \"C:\\\\Users\\\\EDY\\\\xwechat_files\\\\wxid_4964819648112_b68c\\\\msg\\\\file\\\\2026-09\\\\11-V14\\\\.claude\")",
+      "Bash(cp -r 'C:\\\\Users\\\\EDY\\\\xwechat_files\\\\wxid_4964819648112_b68c\\\\msg\\\\file\\\\2026-08\\\\9-V12\\\\9-V12\\\\script' .)",
+      "Bash(cp -r 'C:\\\\Users\\\\EDY\\\\xwechat_files\\\\wxid_4964819648112_b68c\\\\msg\\\\file\\\\2026-08\\\\9-V12\\\\9-V12\\\\assets' .)",
+      "Bash(cp -r 'C:\\\\Users\\\\EDY\\\\xwechat_files\\\\wxid_4964819648112_b68c\\\\msg\\\\file\\\\2026-08\\\\9-V12\\\\9-V12\\\\outputs' .)",
+      "Bash(cp -r 'C:\\\\Users\\\\EDY\\\\xwechat_files\\\\wxid_4964819648112_b68c\\\\msg\\\\file\\\\2026-08\\\\9-V12\\\\9-V12\\\\input' .)",
+      "Bash(cd 'C:\\\\Users\\\\EDY\\\\xwechat_files\\\\wxid_4964819648112_b68c\\\\msg\\\\file\\\\2026-09\\\\11-V14' && pwd)",
+      "Read(//c/Users/EDY/xwechat_files/wxid_4964819648112_b68c/msg/file/2026-09/11-V14/**)",
+      "Bash(rm -rf .claude/skills)",
+      "Bash(cp -r 'C:\\\\Users\\\\EDY\\\\xwechat_files\\\\wxid_4964819648112_b68c\\\\msg\\\\file\\\\2026-09\\\\11-V14\\\\.claude\\\\skills' .claude/)",
+      "Bash(grep -E \"\\\\.\\(md|txt\\)$\")",
+      "Bash(grep -n \"^\\\\*\\\\*\\\\【主体动作与表演】\\\\*\\\\*$\" video-prompts.md)",
+      "Bash(grep -n \"^\\\\[9:16 竖版构图\\\\]$\" video-prompts.md)"
     ],
     "additionalDirectories": [
-      "C:\\Users\\EDY\\xwechat_files\\wxid_4964819648112_b68c\\msg\\file\\2026-08"
+      "C:\\Users\\EDY\\xwechat_files\\wxid_4964819648112_b68c\\msg\\file\\2026-08",
+      "C:\\Users\\EDY\\xwechat_files\\wxid_4964819648112_b68c\\msg\\file\\2026-09\\11-V14"
     ]
   }
 }

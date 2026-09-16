@@ -1,0 +1,98 @@
+{
+  "stamp": "2026-09-15 14:16:29 UTC+08:00",
+  "model": "gpt-6-astra",
+  "effort": "medium",
+  "usage": {
+    "prompt_tokens": 105030,
+    "completion_tokens": 1423,
+    "total_tokens": 106453,
+    "prompt_tokens_details": {
+      "cached_tokens": 104192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 416
+    }
+  },
+  "businessVerdict": "PASS",
+  "complianceVerdict": "PASS",
+  "scores": [
+    {
+      "basis": "兔阿姨外观覆盖年龄、体型、花白短发、服装、配饰、体态及风格基准；与上游清单基本一致。",
+      "dimension": "人物提示词-与导演一致性",
+      "score": 9
+    },
+    {
+      "basis": "兔阿姨、米粒、兽医轮廓和物种差异明确，米粒毛色与兽医獾纹具有辨识度。",
+      "dimension": "人物提示词-辨识度",
+      "score": 9
+    },
+    {
+      "basis": "人物提示词整体表达具体；但米粒病重眼神在道具装猫态中出现矛盾，影响执行精度。",
+      "dimension": "人物提示词-描述精确性",
+      "score": 7
+    },
+    {
+      "basis": "面部、发型、体型、服装、配饰、鞋子和多视图均有覆盖；复用角色按索引引用。",
+      "dimension": "人物提示词-细节完整性",
+      "score": 9
+    },
+    {
+      "basis": "新增角色均明确二维新国风治愈系动画及统一色彩、质感、光逻辑。",
+      "dimension": "人物提示词-风格匹配",
+      "score": 9
+    },
+    {
+      "basis": "特写、三视图、白底及参考图引用方式清晰，可直接用于生图。",
+      "dimension": "人物提示词-格式可执行",
+      "score": 9
+    },
+    {
+      "basis": "设计符合短视频平台泛大众的人宠陪伴与温情叙事定位，关键视觉标识明确。",
+      "dimension": "人物提示词-受众适配",
+      "score": 9
+    },
+    {
+      "basis": "场景覆盖导演清单中的家庭、医院、草坪等七类场景，并补充同空间时间变体。",
+      "dimension": "场景提示词-覆盖完整性",
+      "score": 9
+    },
+    {
+      "basis": "单场景均采用 9:16 单张模式，符合 image_model_config.grid_mode=single。",
+      "dimension": "场景提示词-规格正确性",
+      "score": 10
+    },
+    {
+      "basis": "各场景统一嵌入全片视觉风格基准，变体明确说明空间布局不变。",
+      "dimension": "场景提示词-格间/变体风格一致",
+      "score": 9
+    },
+    {
+      "basis": "场景光线、色温、氛围与导演分析的傍晚、夜晚、清晨及次日下午基本对应。",
+      "dimension": "场景提示词-风格匹配",
+      "score": 9
+    },
+    {
+      "basis": "提示词包含画幅、主体、道具状态、留空纪律和后期引用，可直接复制执行。",
+      "dimension": "场景提示词-格式可执行",
+      "score": 9
+    }
+  ],
+  "verified": [],
+  "dropped": [
+    {
+      "file": "assets/visual/prop-prompts.md",
+      "fix": "将该处改为“眼睛始终锁定兔阿姨（或视线方向），眼神温柔而疲惫，保持注视”，与 R09 的病重状态及导演 P02-P03 设定一致；仅在已故状态使用失焦眼神。",
+      "kind": "business",
+      "problem": "航空箱装猫态对米粒病重状态的描述写成“眼神失焦”，与同文件 R09 角色设定及上游导演分析中“病重时始终锁定兔阿姨、保持注视”相矛盾，可能导致生成出错误的病重状态。",
+      "quote": "米粒的眼神失焦，像是在用最后的力气呼吸。",
+      "rule_source": "outputs/再催我一声/01-director-analysis.md P02“眼神始终锁定着兔阿姨”；assets/visual/character-prompts.md R09“眼睛始终锁定兔阿姨，眼神温柔而疲惫”；art-direction-review-skill 验收清单“与导演一致性”“有无遗漏或偏离”。",
+      "severity": "major"
+    }
+  ],
+  "notes": "已逐项核对 ep11 新增人物、复用人物、场景覆盖、道具覆盖、跨状态关系、全片视觉风格基准、9:16 画幅、单张场景模式、场景留空纪律及上游 P01-P08 的时间/场景/角色/道具状态。项目全局 storyboard_overrides.global=single-shot 约束适用于下游分镜形态，当前服化道参考图未违反。未发现真人/名人、版权 IP、政治敏感、色情低俗、血腥暴力、未成年人侵害、歧视或其他明确合规红线。业务因上述病重眼神矛盾判 FAIL。",
+  "targets": [
+    "assets/visual/character-prompts.md",
+    "assets/visual/scene-prompts.md",
+    "assets/visual/prop-prompts.md"
+  ]
+}

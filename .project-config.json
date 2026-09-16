@@ -2,11 +2,10 @@
   "involvement_mode": "key_node",
   "content_type": "narrative",
   "project_type": "short_video_scripts",
-  "skip_music_episodes": ["脚本10"],
+  "skip_music_episodes": ["脚本10", "再催我一声"],
   "storyboard_overrides": {
     "global": "single-shot"
   },
-  "storyboard_style": "cinematic_realism",
   "video_model_config": {
     "primary_model": "Seedance 2.5",
     "max_seconds": 30,

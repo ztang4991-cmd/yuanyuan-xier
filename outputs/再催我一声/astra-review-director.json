@@ -1,0 +1,142 @@
+{
+  "stamp": "2026-09-15 11:04:43 UTC+08:00",
+  "model": "gpt-6-astra",
+  "effort": "medium",
+  "usage": {
+    "prompt_tokens": 41560,
+    "completion_tokens": 2609,
+    "total_tokens": 44169,
+    "prompt_tokens_details": {
+      "cached_tokens": 27520
+    }
+  },
+  "businessVerdict": "FAIL",
+  "complianceVerdict": "FAIL",
+  "scores": [
+    {
+      "basis": "P01-P08均有明显的多镜头/分段方案与single-shot冲突，且部分段落无法按所述方案连续生成。",
+      "dimension": "镜头可执行性",
+      "score": 3
+    },
+    {
+      "basis": "多数动作链描述细致，但P05遗漏毛发递交，且部分跨段承接依赖独立生成无法保证。",
+      "dimension": "动作链完整性",
+      "score": 6
+    },
+    {
+      "basis": "大量景别、推近、切换和跨段安排具体，但与全局单镜头模式不一致。",
+      "dimension": "画面感",
+      "score": 7
+    },
+    {
+      "basis": "光线方向和色温整体较具体，但治疗室“高对比”违反全片低对比基准。",
+      "dimension": "光影具体性",
+      "score": 6
+    },
+    {
+      "basis": "主要情绪节拍与上游一致，P08反转表达完整。",
+      "dimension": "情绪传达",
+      "score": 8
+    },
+    {
+      "basis": "上承下启标注充分，但多处把独立生成段落当成可无缝连续，需改为设计层呼应。",
+      "dimension": "衔接自然",
+      "score": 6
+    },
+    {
+      "basis": "目标平台、受众和对标信息均有承接，但输出中的慢节奏与大量长段落仍需结合30秒独立生成限制重排。",
+      "dimension": "受众适配",
+      "score": 7
+    },
+    {
+      "basis": "人物清单覆盖主要角色，但缘缘在P06无上游依据，且暖暖/缘缘设定存在待定信息。",
+      "dimension": "人物清单",
+      "score": 6
+    },
+    {
+      "basis": "场景清单基本覆盖剧情场景，医院分区和家庭空间有可设计信息。",
+      "dimension": "场景清单",
+      "score": 8
+    }
+  ],
+  "verified": [
+    {
+      "file": "outputs/再催我一声/01-director-analysis.md",
+      "fix": "删除所有“多镜头”“故事板”及“分为多段生成”的方案，按全局 single-shot 将每个剧情点改为单条连续可执行镜头；如确需多个景别或视角，改写为同一镜头内可连续完成的运动。",
+      "kind": "business",
+      "problem": "P01、P02、P04、P06、P08等剧情点明确采用多镜头、故事板或拆段生成，违反项目全局单镜头硬约束。",
+      "quote": "- **镜头组**：多镜头（4 组）",
+      "rule_source": ".project-config.json `storyboard_overrides.global`: \"single-shot\"；SKILL.md“元数据一致性”及“镜头可执行性”要求与项目硬约束一致。",
+      "severity": "blocker"
+    },
+    {
+      "file": "outputs/再催我一声/01-director-analysis.md",
+      "fix": "将P02改为一条不拆分的30秒单镜头，或在30秒内重新规划连续动作；不得写成“两段15秒生成”。",
+      "kind": "business",
+      "problem": "P02在全局single-shot下仍写成两段独立生成，且镜头形态标为故事板，与硬约束直接矛盾。",
+      "quote": "- **时长建议**：15s×2（30s 总计，分为两段生成或单段压缩）",
+      "rule_source": ".project-config.json `storyboard_overrides.global`: \"single-shot\"；ai-generation-constraints.md“每段视频是独立生成的”，跨段动作连续不可达。",
+      "severity": "blocker"
+    },
+    {
+      "file": "outputs/再催我一声/01-director-analysis.md",
+      "fix": "删除“P05…P06”“P07…P08”等要求跨独立生成段落延续姿态的表述，改为描述层面的视觉母题呼应，并明确动作在单段内完成。",
+      "kind": "business",
+      "problem": "多处将跨段姿态、动作或画面状态写成连续承接，超出独立视频生成的技术可达范围。",
+      "quote": "P08 开场从\"五天后\"字幕 + 喜儿推门进入开始",
+      "rule_source": "ai-generation-constraints.md 1.1：禁止要求跨段精确人物表情连续、跨段镜头位置无缝衔接、让同一动作横跨两条提示词完成；应改为设计层呼应。",
+      "severity": "major"
+    },
+    {
+      "file": "outputs/再催我一声/01-director-analysis.md",
+      "fix": "补充“喜儿轻轻拂掉后递给兔阿姨”的动作及其后兔阿姨接收/查看毛发的画面。",
+      "kind": "business",
+      "problem": "上游明确写有喜儿将拂掉的米粒毛递给兔阿姨，待审讲戏只写拂掉，遗漏了该动作和道具交接。",
+      "quote": "箱底有几根米粒的毛，喜儿看到了，轻轻拂掉。",
+      "rule_source": "script/再催我一声-承接修订版.md第五段：上游参照有“喜儿轻轻拂掉，递给兔阿姨”；SKILL.md验收清单“原剧本中的每一个动作指示是否都有对应剧情点覆盖”。",
+      "severity": "major"
+    },
+    {
+      "file": "outputs/再催我一声/01-director-analysis.md",
+      "fix": "从P06人物字段和导演阐述中删除缘缘，或回补上游剧本中对应的出场依据；人物清单也应同步调整。",
+      "kind": "business",
+      "problem": "待审文件让缘缘参加安葬仪式，但上游P06只列兔阿姨、喜儿、暖暖，未出现缘缘，形成新增人物事实偏差。",
+      "quote": "- **人物**：兔阿姨、米粒（小木棺中）、喜儿、暖暖、缘缘",
+      "rule_source": "script/再催我一声-承接修订版.md第六段仅列兔阿姨、喜儿、暖暖；SKILL.md要求检查与上游参照之间的人物及角色数量事实一致性。",
+      "severity": "major"
+    },
+    {
+      "file": "outputs/再催我一声/01-director-analysis.md",
+      "fix": "把P06的“高对比”改为低对比、环境光填充的柔和处理，并明确治疗室避免硬阴影。",
+      "kind": "business",
+      "problem": "治疗室场景写成“高对比”，与全片光影基准要求的低对比度、阴影由环境光填充相冲突。",
+      "quote": "手术灯白光 + 环境光、高对比但柔和处理",
+      "rule_source": "assets/story/creative-brief.md“对比：低对比度（阴影部分用环境光填充，不出现纯黑）”。",
+      "severity": "major"
+    },
+    {
+      "file": "outputs/再催我一声/01-director-analysis.md",
+      "fix": "删除“极简版主题曲 + 人声哼唱”“音乐渐强”等视频段内音乐设计，改为仅保留环境音/动作音效，并注明配乐由后期独立合成。",
+      "kind": "compliance",
+      "problem": "待审文件把背景音乐和人声哼唱写入视频段落的生成与播放设计，违反项目AI视频音频约束，可能导致生成与后期配乐冲突。",
+      "quote": "音乐在第一行字幕出现时渐入（极简版主题曲，木吉他 + 人声哼唱\"啦啦啦\"）",
+      "rule_source": "ai-generation-constraints.md 1.2：Seedance等视频AI不输出配乐/背景音乐；配乐由Suno独立生成并在剪辑期合成。",
+      "severity": "blocker"
+    }
+  ],
+  "dropped": [
+    {
+      "file": "outputs/再催我一声/01-director-analysis.md",
+      "fix": "删除所有以具体真人导演为风格锚点的内容，改成抽象的视觉特征描述。",
+      "kind": "compliance",
+      "problem": "待审文件沿用了“像宫崎骏拍现实议题”的真人导演风格参考，触碰合规审核中的真人导演名风格引用红线。",
+      "quote": "温暖但不回避矛盾，治愈但不粉饰现实。",
+      "rule_source": "assets/story/creative-brief.md含“像宫崎骏拍现实议题”；compliance-review-skill.md“提示词中是否不引用真人导演名作为风格参考”。",
+      "severity": "major"
+    }
+  ],
+  "notes": "已逐项核对剧情覆盖、人物/场景清单、元数据、镜头可执行性、项目single-shot硬约束、时长、视觉基准、AI生成约束及合规红线。主要失败原因是全局single-shot与多镜头/分段生成方案冲突，并存在上游动作遗漏、人物新增、光影矛盾及视频内配乐和真人导演风格引用风险。合规结论按清单制执行：存在任一红线或高风险项即FAIL。",
+  "targets": [
+    "outputs/再催我一声/01-director-analysis.md"
+  ]
+}
